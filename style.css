@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    min-width: 144px;
+    overflow-x: auto;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding :1rem;
+}
+.container{
+    text-align: center;
+    width: 90%;
+    max-width: 900px;
+    min-width: 111px;
+}
+.buttons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: rgb(245, 243, 123);
+}
+#countDown{
+    text-align: center;
+    font-size: 5rem;
+    background-color: rgb(249, 187, 239);
+}
+.btn{
+    border-radius: 20%;
+    /* padding: 1.5rem; */
+    width: 6.5rem;
+    height: 8rem;
+    cursor: pointer
+}
+.ResetValue{
+    background-color: rgb(161, 199, 252);
+    text-align: center;
+    padding: 1rem;
+    width: 90%;
+    height: 20vh;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 1rem;
+    max-width:900px;
+    min-width: 111px;
+    color:black;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+@media(max-width: 720px){
+    #countDown{
+        font-size: 3rem
+    }
+    .buttons{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .btn{
+        width: 80%;
+        height:auto;
+        padding: 1rem;
+        border-radius: 10px;
+        min-width:80px ;
+    }
+
+}
